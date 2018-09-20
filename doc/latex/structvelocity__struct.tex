@@ -1,0 +1,206 @@
+\hypertarget{structvelocity__struct}{}\section{velocity\+\_\+struct Struct Reference}
+\label{structvelocity__struct}\index{velocity\+\_\+struct@{velocity\+\_\+struct}}
+
+
+{\ttfamily \#include $<$ds.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvelocity__struct_a70a7b047881ced5e8fb93d98f5ecff35}{velocity\+\_\+struct} ()
+\item 
+\hyperlink{structvelocity__struct_aedd734505bf22e821fe06dc99abf4d2f}{velocity\+\_\+struct} (float a, float b, float c)
+\item 
+void \hyperlink{structvelocity__struct_ae242c474a4b628e3a3fef8e2c4eac237}{add} (\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \&v)
+\item 
+void \hyperlink{structvelocity__struct_a7023894b2801235c09639f5e65cad6ce}{add} (float a, float b, float c)
+\item 
+void \hyperlink{structvelocity__struct_aeb96c6ac79c9b3ad99eb77c922147a6f}{subtract} (\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \&v)
+\item 
+void \hyperlink{structvelocity__struct_a60dc1879f60fe6a30af5b6fc03e45130}{subtract} (float a, float b, float c)
+\item 
+void \hyperlink{structvelocity__struct_a86670acb34c58fa09d4e5cedec4443d1}{divide} (float a, float b, float c)
+\item 
+void \hyperlink{structvelocity__struct_a990e008bb7865ee859780bd91a20854b}{divide} (float a)
+\item 
+void \hyperlink{structvelocity__struct_abe267454a998efcb52e00a165eaf3152}{multiply} (float a)
+\item 
+void \hyperlink{structvelocity__struct_a1a5eaa41a8a7d1b903ec41ff24eae038}{set} (\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \&v)
+\item 
+void {\bfseries set} (float a, float b, float c)\hypertarget{structvelocity__struct_a0b922d8a550f815c3b9723555b579250}{}\label{structvelocity__struct_a0b922d8a550f815c3b9723555b579250}
+
+\item 
+void \hyperlink{structvelocity__struct_af6ec92248437baf45850b8dc877ab5d4}{normalise} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries x}\hypertarget{structvelocity__struct_ab45385ff58529c67e8960d0900c02892}{}\label{structvelocity__struct_ab45385ff58529c67e8960d0900c02892}
+
+\item 
+float {\bfseries y}\hypertarget{structvelocity__struct_a03441328a431625809d80bb2bbd19bac}{}\label{structvelocity__struct_a03441328a431625809d80bb2bbd19bac}
+
+\item 
+float {\bfseries z}\hypertarget{structvelocity__struct_a6912a993dbc548e28595ff721be8d7a3}{}\label{structvelocity__struct_a6912a993dbc548e28595ff721be8d7a3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+To store velocity of the boid 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{velocity\+\_\+struct()}{velocity_struct()}}]{\setlength{\rightskip}{0pt plus 5cm}velocity\+\_\+struct\+::velocity\+\_\+struct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_a70a7b047881ced5e8fb93d98f5ecff35}{}\label{structvelocity__struct_a70a7b047881ced5e8fb93d98f5ecff35}
+initializes velocity to zero \index{velocity\+\_\+struct@{velocity\+\_\+struct}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{velocity\+\_\+struct(float a, float b, float c)}{velocity_struct(float a, float b, float c)}}]{\setlength{\rightskip}{0pt plus 5cm}velocity\+\_\+struct\+::velocity\+\_\+struct (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b, }
+\item[{float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_aedd734505bf22e821fe06dc99abf4d2f}{}\label{structvelocity__struct_aedd734505bf22e821fe06dc99abf4d2f}
+initializes velocity to given value 
+\begin{DoxyParams}{Parameters}
+{\em a} & x component of velocity \\
+\hline
+{\em b} & y component of velocity \\
+\hline
+{\em c} & z component of velocity \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!add@{add}}
+\index{add@{add}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{add(velocity\+\_\+struct \&v)}{add(velocity_struct &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf velocity\+\_\+struct} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_ae242c474a4b628e3a3fef8e2c4eac237}{}\label{structvelocity__struct_ae242c474a4b628e3a3fef8e2c4eac237}
+adds velocity v to current velocity 
+\begin{DoxyParams}{Parameters}
+{\em v} & velocity to be added to current velocity \\
+\hline
+\end{DoxyParams}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!add@{add}}
+\index{add@{add}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{add(float a, float b, float c)}{add(float a, float b, float c)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::add (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b, }
+\item[{float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_a7023894b2801235c09639f5e65cad6ce}{}\label{structvelocity__struct_a7023894b2801235c09639f5e65cad6ce}
+adds velocity gicen to current velocity 
+\begin{DoxyParams}{Parameters}
+{\em a} & x component of velocity \\
+\hline
+{\em b} & y component of velocity \\
+\hline
+{\em c} & z component of velocity \\
+\hline
+\end{DoxyParams}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!divide@{divide}}
+\index{divide@{divide}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{divide(float a, float b, float c)}{divide(float a, float b, float c)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::divide (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b, }
+\item[{float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_a86670acb34c58fa09d4e5cedec4443d1}{}\label{structvelocity__struct_a86670acb34c58fa09d4e5cedec4443d1}
+divides velocity by different values in different directions 
+\begin{DoxyParams}{Parameters}
+{\em a} & x component of velocity \\
+\hline
+{\em b} & y component of velocity \\
+\hline
+{\em c} & z component of velocity \\
+\hline
+\end{DoxyParams}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!divide@{divide}}
+\index{divide@{divide}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{divide(float a)}{divide(float a)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::divide (
+\begin{DoxyParamCaption}
+\item[{float}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_a990e008bb7865ee859780bd91a20854b}{}\label{structvelocity__struct_a990e008bb7865ee859780bd91a20854b}
+divides velocity by a uniform value in all different directions 
+\begin{DoxyParams}{Parameters}
+{\em a} & dividing factor \\
+\hline
+\end{DoxyParams}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!multiply@{multiply}}
+\index{multiply@{multiply}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{multiply(float a)}{multiply(float a)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::multiply (
+\begin{DoxyParamCaption}
+\item[{float}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_abe267454a998efcb52e00a165eaf3152}{}\label{structvelocity__struct_abe267454a998efcb52e00a165eaf3152}
+multiplies velocity by different values in different directions 
+\begin{DoxyParams}{Parameters}
+{\em a} & multiplying factors \\
+\hline
+\end{DoxyParams}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!normalise@{normalise}}
+\index{normalise@{normalise}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{normalise()}{normalise()}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::normalise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_af6ec92248437baf45850b8dc877ab5d4}{}\label{structvelocity__struct_af6ec92248437baf45850b8dc877ab5d4}
+converts distance to unity retaining same direction \index{velocity\+\_\+struct@{velocity\+\_\+struct}!set@{set}}
+\index{set@{set}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{set(velocity\+\_\+struct \&v)}{set(velocity_struct &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::set (
+\begin{DoxyParamCaption}
+\item[{{\bf velocity\+\_\+struct} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_a1a5eaa41a8a7d1b903ec41ff24eae038}{}\label{structvelocity__struct_a1a5eaa41a8a7d1b903ec41ff24eae038}
+sets position to given value 
+\begin{DoxyParams}{Parameters}
+{\em v} & new position \\
+\hline
+\end{DoxyParams}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!subtract@{subtract}}
+\index{subtract@{subtract}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{subtract(velocity\+\_\+struct \&v)}{subtract(velocity_struct &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf velocity\+\_\+struct} \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_aeb96c6ac79c9b3ad99eb77c922147a6f}{}\label{structvelocity__struct_aeb96c6ac79c9b3ad99eb77c922147a6f}
+subtracts velocity v to current velocity 
+\begin{DoxyParams}{Parameters}
+{\em v} & velocity to be subtracted to current velocity \\
+\hline
+\end{DoxyParams}
+\index{velocity\+\_\+struct@{velocity\+\_\+struct}!subtract@{subtract}}
+\index{subtract@{subtract}!velocity\+\_\+struct@{velocity\+\_\+struct}}
+\subsubsection[{\texorpdfstring{subtract(float a, float b, float c)}{subtract(float a, float b, float c)}}]{\setlength{\rightskip}{0pt plus 5cm}void velocity\+\_\+struct\+::subtract (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b, }
+\item[{float}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structvelocity__struct_a60dc1879f60fe6a30af5b6fc03e45130}{}\label{structvelocity__struct_a60dc1879f60fe6a30af5b6fc03e45130}
+subtract velocity gicen to current velocity 
+\begin{DoxyParams}{Parameters}
+{\em a} & x component of velocity \\
+\hline
+{\em b} & y component of velocity \\
+\hline
+{\em c} & z component of velocity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/ds.\+h\end{DoxyCompactItemize}

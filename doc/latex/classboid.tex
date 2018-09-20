@@ -1,0 +1,283 @@
+\hypertarget{classboid}{}\section{boid Class Reference}
+\label{classboid}\index{boid@{boid}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_a4e4873c1aca56bf788cb95efaec683be}{cohesion} (vector$<$ \hyperlink{classboid}{boid} $>$ \&arr)
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_a6f413e43a8af15b9efdd633f56be1964}{alignment} (vector$<$ \hyperlink{classboid}{boid} $>$ \&arr)
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_acedf9d5afe588e5a412c1994fff34667}{separation} (vector$<$ \hyperlink{classboid}{boid} $>$ \&arr)
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_aa53aa2520e839090d9af66f5f268b8c1}{main\+\_\+rule} (vector$<$ \hyperlink{classboid}{boid} $>$ \&arr, vector$<$ \hyperlink{classobstacle}{obstacle} $>$ \&obs)
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_a1e9d329d17507f3af359f58dfa75f242}{bound\+\_\+position} ()
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_a0486923cfe0a69214c4bbef8f8e71ab7}{goal\+\_\+seeking} (\hyperlink{structposition__struct}{position\+\_\+struct} \&goal\+\_\+pos)
+\item 
+void \hyperlink{classboid_a68f7345808add886ba407975c66db31b}{limit\+\_\+velocity} ()
+\item 
+\hyperlink{classboid_ab065676b1ebd753fb23052962800f535}{boid} (float radius=ra, float m=5.\+0, float min\+\_\+dis=md)
+\item 
+\hyperlink{classboid_a72162553ff7206c51d6786edd0191e48}{boid} (\hyperlink{structposition__struct}{position\+\_\+struct} p, \hyperlink{structvelocity__struct}{velocity\+\_\+struct} v, float radius=ra, float m=5.\+0, float min\+\_\+dis=md)
+\item 
+\hyperlink{structposition__struct}{position\+\_\+struct} \hyperlink{classboid_ad75c1d5227fc84dd34417a8d3bb13c38}{get\+\_\+position} ()
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_ab2787ebabae81c74f226894c4d5fb390}{get\+\_\+velocity} ()
+\item 
+float \hyperlink{classboid_a14784740d2df3d2071ab5066247b7d14}{get\+\_\+mass} ()
+\item 
+void \hyperlink{classboid_a1c245c1b6fc1aedae014f2e624f2eb0e}{set\+\_\+position} (\hyperlink{structposition__struct}{position\+\_\+struct} \&p)
+\item 
+void \hyperlink{classboid_a3bcc3d0a4db33a26c87d87ee2e521c48}{set\+\_\+velocity} (\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \&v)
+\item 
+void \hyperlink{classboid_a651fba1c974be1b037d9ac560c473d8a}{add\+\_\+velocity} (\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \&v)
+\item 
+void \hyperlink{classboid_ae3fa9ca9038a2aea82b3cd59344cb92e}{add\+\_\+position} (\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \&p)
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_a1e375f99449bc03548df0cc6bb5500c0}{get\+\_\+update} (vector$<$ \hyperlink{classboid}{boid} $>$ \&flk, std\+::vector$<$ \hyperlink{classobstacle}{obstacle} $>$ \&obsts, \hyperlink{structposition__struct}{position\+\_\+struct} \&goal\+\_\+pos, \hyperlink{structvelocity__struct}{velocity\+\_\+struct} \&wind)
+\item 
+void \hyperlink{classboid_ae78fe54b882be6ac24cf616216deba1d}{print} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structposition__struct}{position\+\_\+struct} \hyperlink{classboid_a7d96bcb0f27af38264d7bc0c596d23b5}{pos}
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} \hyperlink{classboid_afc5791cc3a3915aff98b9e7ca88d9570}{vel}
+\item 
+float \hyperlink{classboid_a1be0d96d6dd39b6ebd29346c0da8a8ab}{radius\+\_\+of\+\_\+influence}
+\item 
+float \hyperlink{classboid_a09f01e18113bd347649c44876b78b438}{mass}
+\item 
+float \hyperlink{classboid_a95718cee2ea6ae5b1c19fa992d24db21}{minimum\+\_\+distance}
+\item 
+\hyperlink{structposition__struct}{position\+\_\+struct} \hyperlink{classboid_ac60a8859a11a09420c0800004f70d624}{max\+\_\+position}
+\item 
+float \hyperlink{classboid_ac03185a7bed8491922193b42b2716f3c}{max\+\_\+speed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{boid@{boid}!boid@{boid}}
+\index{boid@{boid}!boid@{boid}}
+\subsubsection[{\texorpdfstring{boid(float radius=ra, float m=5.\+0, float min\+\_\+dis=md)}{boid(float radius=ra, float m=5.0, float min_dis=md)}}]{\setlength{\rightskip}{0pt plus 5cm}boid\+::boid (
+\begin{DoxyParamCaption}
+\item[{float}]{radius = {\ttfamily ra}, }
+\item[{float}]{m = {\ttfamily 5.0}, }
+\item[{float}]{min\+\_\+dis = {\ttfamily md}}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_ab065676b1ebd753fb23052962800f535}{}\label{classboid_ab065676b1ebd753fb23052962800f535}
+Create a new boid 
+\begin{DoxyParams}{Parameters}
+{\em radius} & radius of influnce \\
+\hline
+{\em m} & mass \\
+\hline
+{\em min\+\_\+dis} & minimum distance \\
+\hline
+\end{DoxyParams}
+\index{boid@{boid}!boid@{boid}}
+\index{boid@{boid}!boid@{boid}}
+\subsubsection[{\texorpdfstring{boid(position\+\_\+struct p, velocity\+\_\+struct v, float radius=ra, float m=5.\+0, float min\+\_\+dis=md)}{boid(position_struct p, velocity_struct v, float radius=ra, float m=5.0, float min_dis=md)}}]{\setlength{\rightskip}{0pt plus 5cm}boid\+::boid (
+\begin{DoxyParamCaption}
+\item[{{\bf position\+\_\+struct}}]{p, }
+\item[{{\bf velocity\+\_\+struct}}]{v, }
+\item[{float}]{radius = {\ttfamily ra}, }
+\item[{float}]{m = {\ttfamily 5.0}, }
+\item[{float}]{min\+\_\+dis = {\ttfamily md}}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a72162553ff7206c51d6786edd0191e48}{}\label{classboid_a72162553ff7206c51d6786edd0191e48}
+Create a new boid 
+\begin{DoxyParams}{Parameters}
+{\em p} & initial position \\
+\hline
+{\em v} & initial velocity \\
+\hline
+{\em radius} & radius of influnce \\
+\hline
+{\em m} & mass \\
+\hline
+{\em min\+\_\+dis} & minimum distance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{boid@{boid}!add\+\_\+position@{add\+\_\+position}}
+\index{add\+\_\+position@{add\+\_\+position}!boid@{boid}}
+\subsubsection[{\texorpdfstring{add\+\_\+position(velocity\+\_\+struct \&p)}{add_position(velocity_struct &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void boid\+::add\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{{\bf velocity\+\_\+struct} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_ae3fa9ca9038a2aea82b3cd59344cb92e}{}\label{classboid_ae3fa9ca9038a2aea82b3cd59344cb92e}
+adds v to current position 
+\begin{DoxyParams}{Parameters}
+{\em v} & position to be added to current position \\
+\hline
+\end{DoxyParams}
+\index{boid@{boid}!add\+\_\+velocity@{add\+\_\+velocity}}
+\index{add\+\_\+velocity@{add\+\_\+velocity}!boid@{boid}}
+\subsubsection[{\texorpdfstring{add\+\_\+velocity(velocity\+\_\+struct \&v)}{add_velocity(velocity_struct &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void boid\+::add\+\_\+velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf velocity\+\_\+struct} \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a651fba1c974be1b037d9ac560c473d8a}{}\label{classboid_a651fba1c974be1b037d9ac560c473d8a}
+adds v to current velocity 
+\begin{DoxyParams}{Parameters}
+{\em v} & velocity to be added to current velocity \\
+\hline
+\end{DoxyParams}
+\index{boid@{boid}!alignment@{alignment}}
+\index{alignment@{alignment}!boid@{boid}}
+\subsubsection[{\texorpdfstring{alignment(vector$<$ boid $>$ \&arr)}{alignment(vector< boid > &arr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::alignment (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf boid} $>$ \&}]{arr}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a6f413e43a8af15b9efdd633f56be1964}{}\label{classboid_a6f413e43a8af15b9efdd633f56be1964}
+returns velocity direction due to alignment property \index{boid@{boid}!bound\+\_\+position@{bound\+\_\+position}}
+\index{bound\+\_\+position@{bound\+\_\+position}!boid@{boid}}
+\subsubsection[{\texorpdfstring{bound\+\_\+position()}{bound_position()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::bound\+\_\+position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a1e9d329d17507f3af359f58dfa75f242}{}\label{classboid_a1e9d329d17507f3af359f58dfa75f242}
+returns velocity direction for bounding position \index{boid@{boid}!cohesion@{cohesion}}
+\index{cohesion@{cohesion}!boid@{boid}}
+\subsubsection[{\texorpdfstring{cohesion(vector$<$ boid $>$ \&arr)}{cohesion(vector< boid > &arr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::cohesion (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf boid} $>$ \&}]{arr}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a4e4873c1aca56bf788cb95efaec683be}{}\label{classboid_a4e4873c1aca56bf788cb95efaec683be}
+returns velocity direction due to cohesion \index{boid@{boid}!get\+\_\+mass@{get\+\_\+mass}}
+\index{get\+\_\+mass@{get\+\_\+mass}!boid@{boid}}
+\subsubsection[{\texorpdfstring{get\+\_\+mass()}{get_mass()}}]{\setlength{\rightskip}{0pt plus 5cm}float boid\+::get\+\_\+mass (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a14784740d2df3d2071ab5066247b7d14}{}\label{classboid_a14784740d2df3d2071ab5066247b7d14}
+returns mass of the boid \index{boid@{boid}!get\+\_\+position@{get\+\_\+position}}
+\index{get\+\_\+position@{get\+\_\+position}!boid@{boid}}
+\subsubsection[{\texorpdfstring{get\+\_\+position()}{get_position()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position\+\_\+struct} boid\+::get\+\_\+position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_ad75c1d5227fc84dd34417a8d3bb13c38}{}\label{classboid_ad75c1d5227fc84dd34417a8d3bb13c38}
+returns current position of the boid \index{boid@{boid}!get\+\_\+update@{get\+\_\+update}}
+\index{get\+\_\+update@{get\+\_\+update}!boid@{boid}}
+\subsubsection[{\texorpdfstring{get\+\_\+update(vector$<$ boid $>$ \&flk, std\+::vector$<$ obstacle $>$ \&obsts, position\+\_\+struct \&goal\+\_\+pos, velocity\+\_\+struct \&wind)}{get_update(vector< boid > &flk, std::vector< obstacle > &obsts, position_struct &goal_pos, velocity_struct &wind)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::get\+\_\+update (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf boid} $>$ \&}]{flk, }
+\item[{std\+::vector$<$ {\bf obstacle} $>$ \&}]{obsts, }
+\item[{{\bf position\+\_\+struct} \&}]{goal\+\_\+pos, }
+\item[{{\bf velocity\+\_\+struct} \&}]{wind}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a1e375f99449bc03548df0cc6bb5500c0}{}\label{classboid_a1e375f99449bc03548df0cc6bb5500c0}
+calculates the force to be applied to the boid 
+\begin{DoxyParams}{Parameters}
+{\em flk} & vector containing all boids \\
+\hline
+{\em obsts} & vector containing all obstacles \\
+\hline
+{\em goal\+\_\+pos} & position of goal \\
+\hline
+{\em wind} & velocity due to wind \\
+\hline
+\end{DoxyParams}
+\index{boid@{boid}!get\+\_\+velocity@{get\+\_\+velocity}}
+\index{get\+\_\+velocity@{get\+\_\+velocity}!boid@{boid}}
+\subsubsection[{\texorpdfstring{get\+\_\+velocity()}{get_velocity()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::get\+\_\+velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_ab2787ebabae81c74f226894c4d5fb390}{}\label{classboid_ab2787ebabae81c74f226894c4d5fb390}
+returns current velocity of the boid \index{boid@{boid}!goal\+\_\+seeking@{goal\+\_\+seeking}}
+\index{goal\+\_\+seeking@{goal\+\_\+seeking}!boid@{boid}}
+\subsubsection[{\texorpdfstring{goal\+\_\+seeking(position\+\_\+struct \&goal\+\_\+pos)}{goal_seeking(position_struct &goal_pos)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::goal\+\_\+seeking (
+\begin{DoxyParamCaption}
+\item[{{\bf position\+\_\+struct} \&}]{goal\+\_\+pos}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a0486923cfe0a69214c4bbef8f8e71ab7}{}\label{classboid_a0486923cfe0a69214c4bbef8f8e71ab7}
+returns velocity for goal seeking behaviour \index{boid@{boid}!limit\+\_\+velocity@{limit\+\_\+velocity}}
+\index{limit\+\_\+velocity@{limit\+\_\+velocity}!boid@{boid}}
+\subsubsection[{\texorpdfstring{limit\+\_\+velocity()}{limit_velocity()}}]{\setlength{\rightskip}{0pt plus 5cm}void boid\+::limit\+\_\+velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a68f7345808add886ba407975c66db31b}{}\label{classboid_a68f7345808add886ba407975c66db31b}
+limits velocity to max\+\_\+speed \index{boid@{boid}!main\+\_\+rule@{main\+\_\+rule}}
+\index{main\+\_\+rule@{main\+\_\+rule}!boid@{boid}}
+\subsubsection[{\texorpdfstring{main\+\_\+rule(vector$<$ boid $>$ \&arr, vector$<$ obstacle $>$ \&obs)}{main_rule(vector< boid > &arr, vector< obstacle > &obs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::main\+\_\+rule (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf boid} $>$ \&}]{arr, }
+\item[{vector$<$ {\bf obstacle} $>$ \&}]{obs}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_aa53aa2520e839090d9af66f5f268b8c1}{}\label{classboid_aa53aa2520e839090d9af66f5f268b8c1}
+combines all rules in a single function \index{boid@{boid}!print@{print}}
+\index{print@{print}!boid@{boid}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void boid\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_ae78fe54b882be6ac24cf616216deba1d}{}\label{classboid_ae78fe54b882be6ac24cf616216deba1d}
+prints current position and velocity of the boid \index{boid@{boid}!separation@{separation}}
+\index{separation@{separation}!boid@{boid}}
+\subsubsection[{\texorpdfstring{separation(vector$<$ boid $>$ \&arr)}{separation(vector< boid > &arr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::separation (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf boid} $>$ \&}]{arr}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_acedf9d5afe588e5a412c1994fff34667}{}\label{classboid_acedf9d5afe588e5a412c1994fff34667}
+returns velocity direction due to seperation property \index{boid@{boid}!set\+\_\+position@{set\+\_\+position}}
+\index{set\+\_\+position@{set\+\_\+position}!boid@{boid}}
+\subsubsection[{\texorpdfstring{set\+\_\+position(position\+\_\+struct \&p)}{set_position(position_struct &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void boid\+::set\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{{\bf position\+\_\+struct} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a1c245c1b6fc1aedae014f2e624f2eb0e}{}\label{classboid_a1c245c1b6fc1aedae014f2e624f2eb0e}
+sets current position of boid to p 
+\begin{DoxyParams}{Parameters}
+{\em p} & new position \\
+\hline
+\end{DoxyParams}
+\index{boid@{boid}!set\+\_\+velocity@{set\+\_\+velocity}}
+\index{set\+\_\+velocity@{set\+\_\+velocity}!boid@{boid}}
+\subsubsection[{\texorpdfstring{set\+\_\+velocity(velocity\+\_\+struct \&v)}{set_velocity(velocity_struct &v)}}]{\setlength{\rightskip}{0pt plus 5cm}void boid\+::set\+\_\+velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf velocity\+\_\+struct} \&}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classboid_a3bcc3d0a4db33a26c87d87ee2e521c48}{}\label{classboid_a3bcc3d0a4db33a26c87d87ee2e521c48}
+sets current velocity of boid to p 
+\begin{DoxyParams}{Parameters}
+{\em p} & new velocity \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{boid@{boid}!mass@{mass}}
+\index{mass@{mass}!boid@{boid}}
+\subsubsection[{\texorpdfstring{mass}{mass}}]{\setlength{\rightskip}{0pt plus 5cm}float boid\+::mass}\hypertarget{classboid_a09f01e18113bd347649c44876b78b438}{}\label{classboid_a09f01e18113bd347649c44876b78b438}
+mass of boid \index{boid@{boid}!max\+\_\+position@{max\+\_\+position}}
+\index{max\+\_\+position@{max\+\_\+position}!boid@{boid}}
+\subsubsection[{\texorpdfstring{max\+\_\+position}{max_position}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position\+\_\+struct} boid\+::max\+\_\+position}\hypertarget{classboid_ac60a8859a11a09420c0800004f70d624}{}\label{classboid_ac60a8859a11a09420c0800004f70d624}
+Boundary of the world (assumed to be a cuboid) \index{boid@{boid}!max\+\_\+speed@{max\+\_\+speed}}
+\index{max\+\_\+speed@{max\+\_\+speed}!boid@{boid}}
+\subsubsection[{\texorpdfstring{max\+\_\+speed}{max_speed}}]{\setlength{\rightskip}{0pt plus 5cm}float boid\+::max\+\_\+speed}\hypertarget{classboid_ac03185a7bed8491922193b42b2716f3c}{}\label{classboid_ac03185a7bed8491922193b42b2716f3c}
+Maximum speed a boid can fly with \index{boid@{boid}!minimum\+\_\+distance@{minimum\+\_\+distance}}
+\index{minimum\+\_\+distance@{minimum\+\_\+distance}!boid@{boid}}
+\subsubsection[{\texorpdfstring{minimum\+\_\+distance}{minimum_distance}}]{\setlength{\rightskip}{0pt plus 5cm}float boid\+::minimum\+\_\+distance}\hypertarget{classboid_a95718cee2ea6ae5b1c19fa992d24db21}{}\label{classboid_a95718cee2ea6ae5b1c19fa992d24db21}
+minimum distance between two boids \index{boid@{boid}!pos@{pos}}
+\index{pos@{pos}!boid@{boid}}
+\subsubsection[{\texorpdfstring{pos}{pos}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf position\+\_\+struct} boid\+::pos}\hypertarget{classboid_a7d96bcb0f27af38264d7bc0c596d23b5}{}\label{classboid_a7d96bcb0f27af38264d7bc0c596d23b5}
+current position of boid \index{boid@{boid}!radius\+\_\+of\+\_\+influence@{radius\+\_\+of\+\_\+influence}}
+\index{radius\+\_\+of\+\_\+influence@{radius\+\_\+of\+\_\+influence}!boid@{boid}}
+\subsubsection[{\texorpdfstring{radius\+\_\+of\+\_\+influence}{radius_of_influence}}]{\setlength{\rightskip}{0pt plus 5cm}float boid\+::radius\+\_\+of\+\_\+influence}\hypertarget{classboid_a1be0d96d6dd39b6ebd29346c0da8a8ab}{}\label{classboid_a1be0d96d6dd39b6ebd29346c0da8a8ab}
+distance upto which boid can see \index{boid@{boid}!vel@{vel}}
+\index{vel@{vel}!boid@{boid}}
+\subsubsection[{\texorpdfstring{vel}{vel}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf velocity\+\_\+struct} boid\+::vel}\hypertarget{classboid_afc5791cc3a3915aff98b9e7ca88d9570}{}\label{classboid_afc5791cc3a3915aff98b9e7ca88d9570}
+current velocity of boid 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/boid.\+h\item 
+src/boid.\+cpp\end{DoxyCompactItemize}

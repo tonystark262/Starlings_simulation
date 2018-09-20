@@ -1,0 +1,165 @@
+\hypertarget{classflock}{}\section{flock Class Reference}
+\label{classflock}\index{flock@{flock}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classflock_a0e94f2629ff36455098e9f9f966dc197}{flock} ()
+\item 
+void {\bfseries initialize} ()\hypertarget{classflock_aa30e2fc068a2d9ddcce536ff0a062558}{}\label{classflock_aa30e2fc068a2d9ddcce536ff0a062558}
+
+\item 
+int \hyperlink{classflock_aac5da289f9e204d1da4e9c3f1ac545e6}{get\+Total\+Boids} ()
+\item 
+vector$<$ \hyperlink{classboid}{boid} $>$ \hyperlink{classflock_a56acec06b68505796941a6396ccab92d}{get\+Boids} ()
+\item 
+void \hyperlink{classflock_af81465628a5ac3865b2ea0cc7f2836ce}{add\+\_\+boid} ()
+\item 
+void \hyperlink{classflock_a232951fa755f7db9c8560c3b74192179}{add\+\_\+boid} (\hyperlink{classboid}{boid} b)
+\item 
+void \hyperlink{classflock_a9d41f3257cd92295ff58622fe8221aa9}{spawn} (int n=1000)
+\item 
+int \hyperlink{classflock_adb832c76ae79f4e84a328eb5f3447549}{get\+Total\+Obstacles} ()
+\item 
+void \hyperlink{classflock_a75380c1879bb4edcac5c3dc89622265b}{set\+\_\+goal} (\hyperlink{structposition__struct}{position\+\_\+struct} \&p)
+\item 
+void \hyperlink{classflock_a27945f15e95c5de75f008aa230e7eea4}{update\+\_\+goal} ()
+\item 
+void \hyperlink{classflock_a1957921b331a2aedb042f42de72f42c5}{add\+\_\+obstacle} ()
+\item 
+void \hyperlink{classflock_a7c819292d19a57078461edc8c4e72c28}{add\+\_\+obstacle} (\hyperlink{classobstacle}{obstacle} o)
+\item 
+void \hyperlink{classflock_a70d50567c44353a21f33975c3298ab0d}{update} ()
+\item 
+void \hyperlink{classflock_a75a1375a36b7c5bff6d0fad533a06adc}{render} ()
+\item 
+void {\bfseries new\+\_\+render} ()\hypertarget{classflock_a3b9d8497ce325dbd1176fd3024ffb593}{}\label{classflock_a3b9d8497ce325dbd1176fd3024ffb593}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classboid}{boid} $>$ {\bfseries flk}\hypertarget{classflock_a0f6cd23f2d12c7fdbae6c5f288aee438}{}\label{classflock_a0f6cd23f2d12c7fdbae6c5f288aee438}
+
+\item 
+vector$<$ \hyperlink{classobstacle}{obstacle} $>$ {\bfseries obsts}\hypertarget{classflock_ae1bac281d10d02d299ad92fe1c500a3d}{}\label{classflock_ae1bac281d10d02d299ad92fe1c500a3d}
+
+\item 
+\hyperlink{structposition__struct}{position\+\_\+struct} {\bfseries goal\+\_\+pos}\hypertarget{classflock_abaee70b65016572e0963ab1df8a8227f}{}\label{classflock_abaee70b65016572e0963ab1df8a8227f}
+
+\item 
+\hyperlink{structvelocity__struct}{velocity\+\_\+struct} {\bfseries wind}\hypertarget{classflock_af3fda32623a43dd4c6124b7971cf65f3}{}\label{classflock_af3fda32623a43dd4c6124b7971cf65f3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{flock@{flock}!flock@{flock}}
+\index{flock@{flock}!flock@{flock}}
+\subsubsection[{\texorpdfstring{flock()}{flock()}}]{\setlength{\rightskip}{0pt plus 5cm}flock\+::flock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a0e94f2629ff36455098e9f9f966dc197}{}\label{classflock_a0e94f2629ff36455098e9f9f966dc197}
+creates a flock 
+
+\subsection{Member Function Documentation}
+\index{flock@{flock}!add\+\_\+boid@{add\+\_\+boid}}
+\index{add\+\_\+boid@{add\+\_\+boid}!flock@{flock}}
+\subsubsection[{\texorpdfstring{add\+\_\+boid()}{add_boid()}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::add\+\_\+boid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_af81465628a5ac3865b2ea0cc7f2836ce}{}\label{classflock_af81465628a5ac3865b2ea0cc7f2836ce}
+adds a boid to the flock \index{flock@{flock}!add\+\_\+boid@{add\+\_\+boid}}
+\index{add\+\_\+boid@{add\+\_\+boid}!flock@{flock}}
+\subsubsection[{\texorpdfstring{add\+\_\+boid(boid b)}{add_boid(boid b)}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::add\+\_\+boid (
+\begin{DoxyParamCaption}
+\item[{{\bf boid}}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a232951fa755f7db9c8560c3b74192179}{}\label{classflock_a232951fa755f7db9c8560c3b74192179}
+adds a boid b to the flock 
+\begin{DoxyParams}{Parameters}
+{\em b} & boid to be added to the flock \\
+\hline
+\end{DoxyParams}
+\index{flock@{flock}!add\+\_\+obstacle@{add\+\_\+obstacle}}
+\index{add\+\_\+obstacle@{add\+\_\+obstacle}!flock@{flock}}
+\subsubsection[{\texorpdfstring{add\+\_\+obstacle()}{add_obstacle()}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::add\+\_\+obstacle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a1957921b331a2aedb042f42de72f42c5}{}\label{classflock_a1957921b331a2aedb042f42de72f42c5}
+adds an obstacle to the flock \index{flock@{flock}!add\+\_\+obstacle@{add\+\_\+obstacle}}
+\index{add\+\_\+obstacle@{add\+\_\+obstacle}!flock@{flock}}
+\subsubsection[{\texorpdfstring{add\+\_\+obstacle(obstacle o)}{add_obstacle(obstacle o)}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::add\+\_\+obstacle (
+\begin{DoxyParamCaption}
+\item[{{\bf obstacle}}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a7c819292d19a57078461edc8c4e72c28}{}\label{classflock_a7c819292d19a57078461edc8c4e72c28}
+add an obstacle o to the flock \index{flock@{flock}!get\+Boids@{get\+Boids}}
+\index{get\+Boids@{get\+Boids}!flock@{flock}}
+\subsubsection[{\texorpdfstring{get\+Boids()}{getBoids()}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf boid} $>$ flock\+::get\+Boids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a56acec06b68505796941a6396ccab92d}{}\label{classflock_a56acec06b68505796941a6396ccab92d}
+returns a vector containing all boids in the flock \index{flock@{flock}!get\+Total\+Boids@{get\+Total\+Boids}}
+\index{get\+Total\+Boids@{get\+Total\+Boids}!flock@{flock}}
+\subsubsection[{\texorpdfstring{get\+Total\+Boids()}{getTotalBoids()}}]{\setlength{\rightskip}{0pt plus 5cm}int flock\+::get\+Total\+Boids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_aac5da289f9e204d1da4e9c3f1ac545e6}{}\label{classflock_aac5da289f9e204d1da4e9c3f1ac545e6}
+returns total number of boids in tbe flock \index{flock@{flock}!get\+Total\+Obstacles@{get\+Total\+Obstacles}}
+\index{get\+Total\+Obstacles@{get\+Total\+Obstacles}!flock@{flock}}
+\subsubsection[{\texorpdfstring{get\+Total\+Obstacles()}{getTotalObstacles()}}]{\setlength{\rightskip}{0pt plus 5cm}int flock\+::get\+Total\+Obstacles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_adb832c76ae79f4e84a328eb5f3447549}{}\label{classflock_adb832c76ae79f4e84a328eb5f3447549}
+returns total number of obstacles \index{flock@{flock}!render@{render}}
+\index{render@{render}!flock@{flock}}
+\subsubsection[{\texorpdfstring{render()}{render()}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a75a1375a36b7c5bff6d0fad533a06adc}{}\label{classflock_a75a1375a36b7c5bff6d0fad533a06adc}
+renders the flock using Open\+Gl \index{flock@{flock}!set\+\_\+goal@{set\+\_\+goal}}
+\index{set\+\_\+goal@{set\+\_\+goal}!flock@{flock}}
+\subsubsection[{\texorpdfstring{set\+\_\+goal(position\+\_\+struct \&p)}{set_goal(position_struct &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::set\+\_\+goal (
+\begin{DoxyParamCaption}
+\item[{{\bf position\+\_\+struct} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a75380c1879bb4edcac5c3dc89622265b}{}\label{classflock_a75380c1879bb4edcac5c3dc89622265b}
+sets the position of goal to p \index{flock@{flock}!spawn@{spawn}}
+\index{spawn@{spawn}!flock@{flock}}
+\subsubsection[{\texorpdfstring{spawn(int n=1000)}{spawn(int n=1000)}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::spawn (
+\begin{DoxyParamCaption}
+\item[{int}]{n = {\ttfamily 1000}}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a9d41f3257cd92295ff58622fe8221aa9}{}\label{classflock_a9d41f3257cd92295ff58622fe8221aa9}
+creates n boids with random initial positions and velocities 
+\begin{DoxyParams}{Parameters}
+{\em n} & number of boids \\
+\hline
+\end{DoxyParams}
+\index{flock@{flock}!update@{update}}
+\index{update@{update}!flock@{flock}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a70d50567c44353a21f33975c3298ab0d}{}\label{classflock_a70d50567c44353a21f33975c3298ab0d}
+updates position and velocities of all the boids in the flock \index{flock@{flock}!update\+\_\+goal@{update\+\_\+goal}}
+\index{update\+\_\+goal@{update\+\_\+goal}!flock@{flock}}
+\subsubsection[{\texorpdfstring{update\+\_\+goal()}{update_goal()}}]{\setlength{\rightskip}{0pt plus 5cm}void flock\+::update\+\_\+goal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classflock_a27945f15e95c5de75f008aa230e7eea4}{}\label{classflock_a27945f15e95c5de75f008aa230e7eea4}
+updates goal position randomly 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/flock.\+h\item 
+src/flock.\+cpp\end{DoxyCompactItemize}
